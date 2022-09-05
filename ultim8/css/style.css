@@ -10935,7 +10935,7 @@ h5,
 }
 
 .hero-wrap-2 {
-  height: 450px;
+  height: 300px;
 }
 
 @media (max-width: 1199.98px) {
@@ -10963,7 +10963,7 @@ h5,
 }
 
 .hero-wrap-2 .slider-text {
-  height: 500px;
+  height: 290px;
 }
 
 .owl-carousel {
@@ -11736,7 +11736,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 2em 0;
   position: relative;
 }
 
