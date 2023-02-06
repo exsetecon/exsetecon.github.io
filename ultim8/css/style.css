@@ -42,6 +42,10 @@
   box-sizing: border-box;
 }
 
+.work-entry {
+  height: 250px;
+}
+
 .logo-img {
   width: 26px;
   height: 100%;
@@ -2866,12 +2870,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  /* color: #212529;
-  background-color: #56caeb;
-  border-color: #4ac7ea; */
-  color: #0c2440;
-  background-color: #fff;
-  border-color: #0c2440;
+
+  background-color: #093e7a !important;
+  color: #fff !important;
+  border-color: #093e7a !important;
+
+  /* color: #0c2440 !important;
+  background-color: #fff !important;
+  border-color: #0c2440 !important;  */
 }
 
 .btn-primary:focus,
@@ -8782,24 +8788,24 @@ button.bg-dark:focus {
   padding-left: 0.5rem !important;
 }
 
-.p-3 {
+.mask {
   background-color: #0c2440 !important;
   opacity: 0.5;
   width: 100%;
   height: 100%;
 }
 
-.p-3>h3 {
+.mask>h3 {
   color: #fff;
   font-size: 35px;
   font-weight: bold;
   display: flex;
-  padding-top: 10rem;
+  padding-top: 6rem;
   align-items: center;
   justify-content: center;
 }
 
-.p-3>h3:hover {
+.mask>h3:hover {
   color: #fff !important;
   background-color: transparent;
 }
@@ -11222,6 +11228,7 @@ h5,
 .ftco-work .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
+
 }
 
 .work-entry {
@@ -11231,7 +11238,7 @@ h5,
 
 .work-entry .img {
   display: block;
-  height: 400px;
+  height: 100%;
   position: relative;
 }
 
@@ -11262,7 +11269,6 @@ h5,
 .work-entry:hover .text,
 .work-entry:focus .text {
   opacity: 1;
-  /* color: black; */
   color: inherit;
 }
 
@@ -11738,6 +11744,8 @@ textarea.form-control {
 .ftco-section {
   padding: 2em 0;
   position: relative;
+  /* height: 300px; */
+  flex: 0 0 250px;
 }
 
 .ftco-section.ftco-section-2 {
