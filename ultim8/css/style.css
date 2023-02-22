@@ -239,6 +239,11 @@ img {
   border-style: none;
 }
 
+video{
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
