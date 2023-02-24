@@ -55,8 +55,9 @@
   </nav>
   <!-- END nav -->
 
-  <div class="hero-wrap hero-wrap-2" style="background-image: url(images/pexels-dominika-roseclay-1036841.jpg); background-size: cover; background-repeat: no-repeat;"
-  data-stellar-background-ratio="0.5">
+  <div class="hero-wrap hero-wrap-2"
+    style="background-image: url(images/pexels-dominika-roseclay-1036841.jpg); background-size: cover; background-repeat: no-repeat;"
+    data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container-fluid">
       <div class="row no-gutters d-flex slider-text align-items-center justify-content-center"
@@ -87,7 +88,7 @@
           <p><span>Email:</span> <a href="mailto:connect@exsete.com">connect@exsete.com</a></p>
         </div>
         <div class="col-md-3">
-          <p><span>Website</span> <a href="#">exsete.com</a></p>
+          <p><span>Website</span> <a href="index.html">exsete.com</a></p>
         </div>
       </div>
       <div class="row block-9">
@@ -151,7 +152,6 @@
               <ul>
                 <li><span class="icon icon-map-marker"></span><span class="text">904, Galleria Towers, DLF Phase 4,
                     Gurugram, Haryana, India</span></li>
-                <!-- <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li> -->
                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">connect@exsete.com</span></a>
                 </li>
               </ul>
@@ -194,8 +194,8 @@
         Host: "smtp.elasticemail.com",
         Username: "exsete131@gmail.com",
         Password: "C601902C8C016D731BCA96449AE1611CAC36",
-        To: 'alisha.banerjee@exsete.com',
-        From: document.getElementById("email").value,
+        To: 'connect@exsete.com',
+        From: "exsete131@gmail.com",
         Subject: "New contact form enquiry",
         Body: "Name : " + document.getElementById("name").value
           + "<br> Email: " + document.getElementById("email").value
@@ -205,6 +205,7 @@
         message => alert(message)
       );
     }
+
   </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
