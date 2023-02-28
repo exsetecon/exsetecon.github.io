@@ -10817,7 +10817,8 @@ h5,
   right: 0;
   bottom: 0;
   content: '';
-  opacity: 1;
+  /* opacity: 1;
+   */
   background: #f0f0f0;
   background: -moz-linear-gradient(45deg, #f0f0f0 0%, white 55%, white 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #f0f0f0), color-stop(55%, white), color-stop(100%, white));
@@ -10972,7 +10973,7 @@ h5,
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .9;
+  opacity: 0.7;
   background: #f0f0f0;
   background: -moz-linear-gradient(45deg, #f0f0f0 0%, white 55%, white 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #f0f0f0), color-stop(55%, white), color-stop(100%, white));
