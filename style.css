@@ -1,0 +1,144 @@
+/* sample-1.css */
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+    font-weight: 300;
+}
+
+/* Glass cards from Exsete */
+.glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.glass-card:hover {
+    border-color: #FF3621;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.hero-glow {
+    background: radial-gradient(circle at 50% -10%, #1e293b 0%, #020617 80%);
+}
+
+.logo-box {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.standard-logo {
+    height: 48px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover .standard-logo {
+    filter: none !important;
+    opacity: 1;
+}
+
+/* Hover filter to turn Happydost and Apnadost logos Syrn Blue (#00AEEF) - keeping existing */
+.glass-card:hover .blue-hover-target {
+    filter: invert(58%) sepia(82%) saturate(2716%) hue-rotate(164deg) brightness(98%) contrast(105%) !important;
+}
+
+.always-white {
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
+}
+
+.always-blue {
+    filter: invert(58%) sepia(82%) saturate(2716%) hue-rotate(164deg) brightness(98%) contrast(105%) !important;
+    opacity: 1 !important;
+}
+
+.always-original {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* Updates the ApnaDost live indicator color on hover */
+.glass-card:hover .apnadost-ring {
+    border-color: #00AEEF;
+}
+
+.glass-card:hover .apnadost-dot {
+    background-color: #00AEEF;
+}
+
+.sector-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #FF3621;
+    margin-top: auto;
+    text-align: right;
+    padding-top: 1.5rem;
+}
+
+.launch-symbol {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    color: #FF3621;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover .launch-symbol {
+    color: #FF3621;
+}
+
+/* Glass Form Inputs */
+.glass-input {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.glass-input:focus {
+    border-color: #FF3621;
+    outline: none;
+}
+
+/* Approach steps specific styling */
+.approach-step-number {
+    display: inline-block;
+    background: #FF3621;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* ── Banner image: 395px on desktop, scales down responsively ── */
+.banner-img {
+    height: 395px;
+}
+
+@media (max-width: 1023px) {
+    .banner-img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 639px) {
+    .banner-img {
+        height: 200px;
+    }
+}
